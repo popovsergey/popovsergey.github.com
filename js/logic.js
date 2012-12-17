@@ -19,4 +19,9 @@ $(function(){
 				}
 	});
 
+/* Color change hover */	
+	$('.b-accordion__item-name').hover(function(){
+		$(this).stop().animate({backgroundColor:"#269ce0"}, 600);
+		}, function(){$(this).stop().animate({backgroundColor:"#AAA9A9"}, 600); });			
+
 });
