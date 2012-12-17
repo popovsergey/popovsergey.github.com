@@ -2,26 +2,31 @@ $(function(){
 
 /* Accordion */
 			$(".b-accordion__item-name").on("click", function(){
+			
 
 				var $this = $(this),
-				$frames = $(".b-accordion__item"),
-				$target = $this.next(".b-accordion__quest-list");
+				$band =$this.parents(".b-accordion__item"),
+				$frames = $(".b-accordion__item")
+				$target = $this.parent().next(".b-accordion__quest-list");
 
-				if ($this.parent().hasClass("active")) {
+				if ($band.hasClass("active")) {
 					$target.slideUp();
-					$this.parent().removeClass("active");
+					$band.removeClass("active");
+
 
 				}else{
 					$frames.children(".b-accordion__quest-list").slideUp();
 					$frames.removeClass("active");
 					$target.slideDown();
-					$this.parent().addClass("active");
+					$band.addClass("active");
+
 				}
 	});
-
+			
 /* Color change hover */	
-	$('.b-accordion__item-name').hover(function(){
+	$('.b-accordion__item-band').hover(function(){
 		$(this).stop().animate({backgroundColor:"#269ce0"}, 600);
-		}, function(){$(this).stop().animate({backgroundColor:"#AAA9A9"}, 600); });			
+		}, function(){$(this).stop().animate({backgroundColor:"#AAA9A9"}, 600); });
 
+		
 });

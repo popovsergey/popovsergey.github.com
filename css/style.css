@@ -6,15 +6,14 @@
 }
 
 body {
-	font-size:12px; 
-	font-family:arial; 
+  font-size:12px; 
+  font-family:arial; 
   line-height:1.2em;
 }
 
 a:hover {
   color: #ccc;
 }
-
 a {
   color: #fff;
 }
@@ -24,10 +23,10 @@ a {
   background:#ccc;
   position:relative;
   width:960px;
-  height:540px;
   padding:20px 40px;
-  margin:30px auto;
+  margin:40px auto;
 }
+
 
 .b-page_background_gray {
   background-image:url(../images/background.png);
@@ -39,9 +38,15 @@ a {
   box-shadow: #000 0 0 20px;
 }
 
+.b-content{
+  width:100%;
+  position:relative; 
+  min-height:600px;
+}
+
 .b-header{
 	margin:10px;
-  position:relative;
+  position:relative; 
 }
 
 .b-header__title{
@@ -52,32 +57,55 @@ a {
   text-shadow:1px 2px 1px #000; 
 }
 
-
-
+.b-mes{
+  width:30%;
+  background:url(../images/b-mes.png) no-repeat;
+  height:500px;
+  float:right;
+}
 
 /*Accordion*/
 .b-accordion{
   width:70%;
-	float:left;
+  float:left;
 }
 
 .b-accordion__item{
-    width:100%;
+  width:100%;
+  margin:5px 0;
+}
+
+.b-accordion__item-band{
+  font-size:14px; 
+  text-transform:uppercase;
+  background-color:#aaa9a9;
+  cursor:pointer;
+  color:#000;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: #000 0 0 6px;
+  
 }
 
 .b-accordion__item-name{
-  font-size:14px; 
-  text-transform:uppercase;
-  background:#aaa9a9 url(../images/arrow-right.png) no-repeat 5px;
-  height:16px; 
-  padding: 3px 25px;
-  margin:3px;
-  cursor:pointer;
-  color:#000;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+ width:90%;
+ display:inline-block;
+ padding: 5px 0 0 25px;
+ height:20px;
+ vertical-align:middle;
+ background: url(../images/arrow-right.png) no-repeat 5px;
+}
 
+
+
+.b-accordion__item-handle{
+	background:url(../images/b-accordion__item-handle.png) no-repeat 5px;
+	display:inline-block;
+	width:5%;
+	height:25px;
+	float:right;
+	cursor:move;
 }
 
 .b-accordion__quest-list{
@@ -85,11 +113,13 @@ a {
   padding:3px;
   margin:3px;
   text-align:justify;
-
 }
 
+.active .b-accordion__item-band{
+background-color:#269ce0 !important; 
+}
 .active .b-accordion__item-name{
-   background:#269ce0 url(../images/arrow-down.png) no-repeat 5px !important; 
+  background:url(../images/arrow-down.png) no-repeat 5px !important;    
 }
 
 .active .b-accordion__quest-list{
@@ -98,11 +128,13 @@ a {
 
 .b-accordion__quest-item{
   border-bottom:1px dashed #ccc;
-  margin:5px;
-  padding-bottom:3px;
+  padding-bottom:5px;
+  margin-bottom:5px;
+
 }
 
 .b-accordion__title{  
+
   font-size:16px;
   background:url(../images/tick.png) no-repeat 5px; 
   margin:3px 0;
@@ -113,13 +145,26 @@ a {
   text-shadow:1px 1px 1px #000; 
 }
 
-
-.b-mes{
-  width:30%;
-  background:url(../images/b-mes.png) no-repeat;
-  height:500px;
-  float:right;
+.b-accordion__description{  
+  font-size:13px;
+   padding-left:30px;
 }
+
+.b-accordion__description p{  
+  margin-bottom:5px;
+}
+
+.b-footer{  
+  width:100%;
+  margin-top:10px;
+  height:20px;
+  position:relative; 
+  text-align: center;
+  clear:both;
+}
+
+
+
 
 
 
