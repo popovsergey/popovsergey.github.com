@@ -102,9 +102,11 @@ a {
   padding-bottom:3px;
 }
 
-.b-accordion__title{	
+.b-accordion__title{  
   font-size:16px;
+  background:url(../images/tick.png) no-repeat 5px; 
   margin:3px 0;
+  padding-left:30px;
   -webkit-text-shadow:1px 1px 1px #000; 
   -moz-text-shadow:1px 1px 1px #000; 
   -o-text-shadow:1px 1px 1px #000; 
